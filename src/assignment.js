@@ -34,7 +34,7 @@ console.log(sum)
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-const array = [1,2,3,4,5,6,7,8,9,10,12];
+
 const even = [];
 function countEvenNumbers(arrayOfNumbers){
 array.forEach(number =>{
@@ -44,6 +44,7 @@ array.forEach(number =>{
 })
   return arrayOfNumbers.length;
 }
+const array = [1,2,3,4,5,6,7,8,9,10,12];
 countEvenNumbers(array)
 console.log(even)
 
