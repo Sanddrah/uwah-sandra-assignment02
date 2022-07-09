@@ -13,17 +13,16 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-let sum = 0;
+var sum = 0;
 function sumOfNumbers(arrayOfNumbers) {
-  for(i=0; i<arrayOfNumbers.length;i++){
+  for(i=0; i<arrayOfNumbers.length; i++){
     sum += arrayOfNumbers[i];
   }
-return arrayOfNumbers.length;
+  return sum;
 }
-const array = [1,2,3,4,5,6];
-sumOfNumbers(array);
 console.log(sum)
 
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -35,7 +34,7 @@ console.log(sum)
  * @returns number the count of even numbers
  */
 
-const even = [];
+var even = [];
 function countEvenNumbers(arrayOfNumbers){
   arrayOfNumbers.forEach(number =>{
     if(number % 2 === 0){
@@ -44,11 +43,10 @@ function countEvenNumbers(arrayOfNumbers){
   })
   return even.length;
 }
-const array2 = [1,2,3,4,5,6,7,8,9,10,12,8];
-countEvenNumbers(array2)
+
 console.log(even.length)
 
-
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -65,22 +63,19 @@ console.log(even.length)
  * @returns Array the converted temperatures in Fahrenheit
  */
 
-newDegree = []
+var newDegree = []
 function celsiusToFahrenheit(arrayOfNumbers) {
   arrayOfNumbers.forEach(number => {
     let x = Math.trunc(number)
-    let degreeInCelcius = (x * 1.8) + 32
+    let degreeInCelcius = Math.trunc((x * 1.8) + 32)
 
     newDegree.push(degreeInCelcius)
   })
     return newDegree;
 }
-const degreeinInFahrenheit = [49, 59.2, 25, 94.0]
-celsiusToFahrenheit(degreeinInFahrenheit)
 console.log(newDegree)
 
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
-
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
