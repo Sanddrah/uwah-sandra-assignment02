@@ -37,11 +37,11 @@ console.log(sum)
 
 const even = [];
 function countEvenNumbers(arrayOfNumbers){
-array.forEach(number =>{
-  if(number % 2 ===0){
-    even.push(number)
-  }
-})
+  arrayOfNumbers.forEach(number =>{
+    if(number % 2 === 0){
+      even.push(number)
+    }
+  })
   return arrayOfNumbers.length;
 }
 const array = [1,2,3,4,5,6,7,8,9,10,12];
